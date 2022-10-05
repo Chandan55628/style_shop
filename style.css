@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding:0px
+}
+/* Start header */
+#header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 80px;
+    background:#e3e6f3f8;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.732);
+    z-index: 999;
+    position:sticky;
+    top:0;
+    left:0;
+
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+    padding:0 20px;
+    position:relative;
+}
+#navbar li a{
+    text-decoration:none;
+    font-size:16px;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 0.58);
+    transition:0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:black;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width:40%;
+    height:3px;
+    border-radius: 40px;
+    background:green;
+    position:absolute;
+    bottom:-4px;
+    left:20px;
+
+}
+#header img{
+    height:10vh;
+   
+}
+#hero{
+    background-image: url(img/shopping1.webp);
+    height:120vh;
+    width:100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    display:flex;
+    padding:30px;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content:center; */
+    
+}
+#hero h4{
+    padding-bottom:20px;
+}
+#hero h1{
+    /* padding:13px; */
+    color:green;
+}
+#hero p{
+padding-top:15px;
+color:rgb(104, 100, 100);
+}
+#hero button{
+    background-image:url(img/img/button.png);
+    margin-top: 12px;
+    background-color:transparent;
+    color:black;
+    border:0;
+    padding:14px 80px 14px 65px;
+    font-weight: 700;
+    font-size:15px;
+    font-style:oblique;
+}
+.section-p1{
+    padding:40px 80px;
+}
+#feature .fe-box{
+    text-align: center;
+}
